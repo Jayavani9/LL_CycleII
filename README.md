@@ -1,4 +1,3 @@
-# LL_CycleII
 
 The Solution.java file contains the solution to the Leetcode problem LinkedListCycle II.
 There are two ways mentioned in the solution file.
