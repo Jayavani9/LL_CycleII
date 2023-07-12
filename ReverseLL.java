@@ -11,6 +11,14 @@
 class ReverseLL {
     public ListNode reverseList(ListNode head) {
         if(head == null || head.next == null) return head;
+       ListNode rev = reverseList(head.next);
+       //System.out.println(rev.val);
+       //System.out.println(head.val);
+       head.next.next = head;
+       head.next = null;
+       return rev;
+       /* 
+        if(head == null || head.next == null) return head;
         ListNode prev = null;
         ListNode curr = head;
         ListNode n = head.next;
@@ -22,6 +30,6 @@ class ReverseLL {
         }
         curr.next = prev;
         return curr;
-        
+        */
     }
 }
